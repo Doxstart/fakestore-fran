@@ -1,0 +1,27 @@
+.sidenav-main-container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.spacer{
+  flex-grow: 1;
+}
+
+.search-router-container{
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header-container{
+  position: static;
+  top: 0px;
+}
+
+.sidenav{
+  height: 100%;
+  position: sticky;
+  top: 0px;
+}
