@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { ResultsForTestingNewComponent } from './pages/results-for-testing-new/results-for-testing-new.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     ResultsComponent,
     SidenavComponent,
     HeaderComponent,
+    ResultsForTestingNewComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,13 +2,13 @@
   <form>
     <mat-form-field>
       <mat-label>Search</mat-label>
-      <input matInput type="text" [(ngModel)]="searchTerm" name="searchInput"> <!--(input)="onSearch()"-->
+      <input matInput type="text" [(ngModel)]="searchTerm" name="searchInput">
     </mat-form-field>
   </form>
   <span class="spacer"></span>
   <mat-form-field>
     <mat-label>Filter</mat-label>
-    <mat-select [(ngModel)]="searchFilter" name="searchFilter" required> <!--(input)="onSearch()"-->
+    <mat-select [(ngModel)]="searchFilter" name="searchFilter" required>
       <mat-option value="0">No Filters</mat-option>
       <mat-option value="1">Starts With</mat-option>
       <mat-option value="2">Ends With</mat-option>

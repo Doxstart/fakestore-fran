@@ -1,7 +1,27 @@
+.app-container{
+
+}
+
+.app-header-container{
+  position: static;
+  top: 0px;
+}
+
+.header{
+
+}
+
 .sidenav-main-container{
   display: flex;
   flex-direction: row;
   height: 100%;
+}
+
+.sidenav{
+  height: 100%;
+  position: sticky;
+  top: 0px;
+  //top: 64px
 }
 
 .spacer{
@@ -13,15 +33,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.app-header-container{
-  position: static;
-  top: 0px;
-}
-
-.sidenav{
-  height: 100%;
-  position: sticky;
-  top: 0px;
 }

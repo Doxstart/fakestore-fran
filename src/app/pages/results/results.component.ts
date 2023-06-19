@@ -13,21 +13,13 @@ export class ResultsComponent implements OnInit{
 
   products: Products[] = [];
 
-  constructor(public appComp: AppComponent, public connServ: ConnectionService){
-  }
+  constructor(public appComp: AppComponent, public connServ: ConnectionService){}
 
   ngOnInit(): void {
-    /*
-    Change results based on search
-    if (/*filter value goes here ) {
-      for each filter value one call to the connection service
-    }
-
-    */
-  // this.connService.getProducts().subscribe({
-  //     next: data => this.products = data as any as Products[],
-  //     error: err => console.log(err)
-  //   })
+   this.connServ.getProducts().subscribe({
+       next: data => this.products = data as any as Products[],
+       error: err => console.log(err)
+     })
   }
 }
 

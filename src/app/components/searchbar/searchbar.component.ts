@@ -33,6 +33,9 @@ export class SearchbarComponent {
   @Output()
   searchFilterEvent : EventEmitter<string> = new EventEmitter<string>();
 
+  @Output()
+  searchOnClickEvent: EventEmitter<string> = new EventEmitter<string>();
+
   constructor(public connServ: ConnectionService){}
 
   onSearchTerm(){
@@ -43,8 +46,13 @@ export class SearchbarComponent {
     this.searchFilterEvent.emit(this.searchFilter);
   }
 
+  onSearchClick(){
+    this.searchTermEvent.emit(this.searchTerm);
+    this.searchFilterEvent.emit(this.searchFilter);
+    this.searchOnClickEvent.emit();
+  }
+
   onSearch() {
-    this.onSearchTerm()
-    this.onSearchFilter()
+    this.onSearchClick()
   }
 }

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ResultsComponent } from './pages/results/results.component';
+import { ResultsForTestingNewComponent } from './pages/results-for-testing-new/results-for-testing-new.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch: 'full'},
-  {path: 'home', component: ResultsComponent}
+  {path: 'home', component: ResultsForTestingNewComponent}
 ];
 
 @NgModule({
